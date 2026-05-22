@@ -31,4 +31,4 @@ END $$;
 UPDATE movies SET is_featured = true
 WHERE id IN (
   SELECT id FROM movies ORDER BY rating DESC LIMIT 4
-);
+); 
